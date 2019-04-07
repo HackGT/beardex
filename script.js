@@ -1,0 +1,52 @@
+const bearFile = 'bears.json'
+const cols = document.getElementsByClassName('col')
+
+fetch(bearFile).then(function(response) {
+    return response.json()
+}).then(function(bearJSON) {
+    addBears(bearJSON)
+});
+// fetch(bearFile)
+// .then(function(response) {
+//     addBears(response.json());
+// }).then(function(json) {
+//     console.log(json)
+// })
+
+function addBears(bearJSON) {
+    for (var i = 0; i < bearJSON.length; i++) {
+        var currentTemplate = createBearElement(bearJSON[i], i)
+        cols[i % cols.length].append(currentTemplate)
+    }
+}
+
+function createBearElement(bearInfo, bearNumber) {
+    /*
+        bearInfo: {
+            bearImage,
+            bearDescription,
+            bearLink,
+            bearAuthor,
+            bearAuthorLink
+        }
+    */
+
+    var template = document.getElementById('bear-template').cloneNode(true)
+    template.id = ""
+    template = template.content
+    window.t = template
+    console.log(template)
+    
+    template.querySelector('.bear-pic').src = bearInfo.bearImage
+    template.querySelector('.bear-description').textContent = bearInfo.bearDescription
+    template.querySelector('.bear-link').href = bearInfo.bearLink
+    template.querySelector('.bear-number').textContent = (bearNumber + 1)
+    if (bearInfo.bearAuthor) {
+        template.querySelector('.by').textContent = 'By '
+        template.querySelector('.bear-author').textContent = bearInfo.bearAuthor
+        template.querySelector('.bear-author').href = bearInfo.bearAuthorLink
+    }
+    
+
+    return template
+}

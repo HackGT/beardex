@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    padding: 2em 3em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 80%;
+}
+
+.col {
+    min-height: 100%;
+    grid-column: 1fr 1;
+}
+
+.col .bear {
+    margin: 3em 1em;
+}
+
+.bear-description {
+    margin-bottom: 0.25em;
+}
+
+.bear {
+    transition: 0.25s all;
+}
+
+.bear:hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.bear img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+}
