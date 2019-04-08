@@ -4,6 +4,7 @@ const cols = document.getElementsByClassName('col')
 fetch(bearFile).then(function(response) {
     return response.json()
 }).then(function(bearJSON) {
+    bearJSON = bearJSON.reverse();
     addBears(bearJSON)
 });
 // fetch(bearFile)
@@ -15,7 +16,7 @@ fetch(bearFile).then(function(response) {
 
 function addBears(bearJSON) {
     for (var i = 0; i < bearJSON.length; i++) {
-        var currentTemplate = createBearElement(bearJSON[i], i)
+        var currentTemplate = createBearElement(bearJSON[i], bearJSON.length - i - 1)
         cols[i % cols.length].append(currentTemplate)
     }
 }
@@ -45,6 +46,11 @@ function createBearElement(bearInfo, bearNumber) {
         template.querySelector('.by').textContent = 'By '
         template.querySelector('.bear-author').textContent = bearInfo.bearAuthor
         template.querySelector('.bear-author').href = bearInfo.bearAuthorLink
+    }
+    if (bearInfo.bearEvent) {
+        template.querySelector('.for').textContent = 'Seen at '
+        template.querySelector('.bear-event').textContent = bearInfo.bearEvent
+        template.querySelector('.bear-event').href = bearInfo.bearEventLink
     }
     
 

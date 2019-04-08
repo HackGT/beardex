@@ -1,69 +1,105 @@
 [
     {
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
+        "bearImage": "assets/2016teeny_HackGTBear2.png",
+        "bearDescription": "Hacker Bear",
         "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
-    },{
-        "bearImage": "assets/bear.png",
-        "bearDescription": "Some bear from GoogleMaps",
-        "bearLink": "#",
-        "bearAuthor": "Google Images",
-        "bearAuthorLink": "#"
+        "bearEvent": "HacKGTeeny Spring 2017",
+        "bearEventLink": "https://spring2017.teeny.hack.gt"
+    },
+    {
+        "bearImage": "assets/2016teeny_SleepingBearSticker.png",
+        "bearDescription": "Sloth Bear",
+        "bearEvent": "HacKGTeeny Spring 2017",
+        "bearEventLink": "https://spring2017.teeny.hack.gt"
+    },
+    {
+        "bearImage": "assets/2016teeny_VRBear.png",
+        "bearDescription": "VR Bear",
+        "bearEvent": "HacKGTeeny Spring 2017",
+        "bearEventLink": "https://spring2017.teeny.hack.gt"
+    },
+    {
+        "bearImage": "assets/2017hardware_hackGThardwarebear.png",
+        "bearDescription": "Hardware Bear",
+        "bearEvent": "HackGT Presents: Hardware Hackathon",
+        "bearEventLink": "https://www.facebook.com/events/1122201194593266/"
+    },
+    {
+        "bearImage": "assets/2017teeny_Bear.png",
+        "bearDescription": "Holo Bear",
+        "bearEvent": "HackGTeeny Fall 2017",
+        "bearEventLink": "https://fall2017.teeny.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018healthtech_children.png",
+        "bearDescription": "Children's Health Bear",
+        "bearEvent": "HackGT's Healthtech Hackathon",
+        "bearEventLink": "https://healthtech.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018healthtech_fitness.png",
+        "bearDescription": "Fitness Bear",
+        "bearEvent": "HackGT's Healthtech Hackathon",
+        "bearEventLink": "https://healthtech.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018healthtech_global.png",
+        "bearDescription": "Global Health Bear",
+        "bearEvent": "HackGT's Healthtech Hackathon",
+        "bearEventLink": "https://healthtech.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018healthtech_inpatient.png",
+        "bearDescription": "Inpatient Health Bear",
+        "bearEvent": "HackGT's Healthtech Hackathon",
+        "bearEventLink": "https://healthtech.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018healthtech_woman.png",
+        "bearDescription": "Woman's Health Bear",
+        "bearEvent": "HackGT's Healthtech Hackathon",
+        "bearEventLink": "https://healthtech.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018buildgt_bearandgear_hulalines-01.jpg",
+        "bearDescription": "Gear Bear",
+        "bearEvent": "BuildGT 2018",
+        "bearEventLink": "https://build.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018buildgt_bearsticker.png",
+        "bearDescription": "Rocket Bear",
+        "bearEvent": "BuildGT 2018",
+        "bearEventLink": "https://build.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018buildgt_hackgteeenyhardware.png",
+        "bearDescription": "Lightbulb Bear",
+        "bearEvent": "BuildGT 2018",
+        "bearEventLink": "https://build.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018buildgt_torobear.png",
+        "bearDescription": "Toro Bear",
+        "bearEvent": "BuildGT 2018",
+        "bearEventLink": "https://build.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018teeny_bike.png",
+        "bearDescription": "Biker Bear",
+        "bearEvent": "HackGTeeny 2018",
+        "bearEventLink": "https://teeny.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018teeny_Teeny404.svg",
+        "bearDescription": "404 Bear",
+        "bearEvent": "HackGTeeny 2018",
+        "bearEventLink": "https://teeny.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2018teeny_TeenyBearBuilding.svg",
+        "bearDescription": "Tinker Bear",
+        "bearEvent": "HackGTeeny 2018",
+        "bearEventLink": "https://teeny.hack.gt/"
     }
 ]
