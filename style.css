@@ -30,10 +30,19 @@ body {
 
 .bear {
     transition: 0.25s all;
+    border: solid #333 2px;
+    padding: 1em;
+    border-radius: 0.5em;
 }
 
 .bear:hover {
     transform: scale(1.05) rotate(1deg);
+    box-shadow: #999 0.5em 0.5em 0.75em;
+}
+
+.bear-link {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .bear img {
@@ -42,4 +51,8 @@ body {
 
 footer {
     text-align: center;
+}
+
+@media (max-width: 600px) {
+  
 }

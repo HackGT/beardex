@@ -33,20 +33,21 @@ function createBearElement(bearInfo, bearNumber) {
     */
 
     var template = document.getElementById('bear-template').cloneNode(true)
-    template.id = ""
     template = template.content
-    window.t = template
-    console.log(template)
+
+    template.querySelector('.bear').id = "bear-" + (bearNumber + 1)
     
     template.querySelector('.bear-pic').src = bearInfo.bearImage
-    template.querySelector('.bear-description').textContent = bearInfo.bearDescription
-    template.querySelector('.bear-link').href = bearInfo.bearLink
+    template.querySelector('.bear-description').textContent = bearInfo.bearDescription || ""
+    template.querySelector('.bear-link').href = bearInfo.bearLink || "#"
     template.querySelector('.bear-number').textContent = (bearNumber + 1)
+
     if (bearInfo.bearAuthor) {
         template.querySelector('.by').textContent = 'By '
         template.querySelector('.bear-author').textContent = bearInfo.bearAuthor
         template.querySelector('.bear-author').href = bearInfo.bearAuthorLink
     }
+
     if (bearInfo.bearEvent) {
         template.querySelector('.for').textContent = 'Seen at '
         template.querySelector('.bear-event').textContent = bearInfo.bearEvent
