@@ -49,10 +49,24 @@ body {
     max-width: 100%;
 }
 
+.duplicate {
+    display: none;
+}
+
+.duplicate .bear {
+    margin: 1em 0;
+}
+
 footer {
     text-align: center;
 }
 
 @media (max-width: 600px) {
-  
+    .container {
+        display: none;
+    }
+
+    .duplicate {
+        display: initial;
+    }
 }

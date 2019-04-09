@@ -1,5 +1,6 @@
 const bearFile = 'bears.json'
 const cols = document.getElementsByClassName('col')
+const duplicate = document.querySelector('.duplicate')
 
 fetch(bearFile).then(function(response) {
     return response.json()
@@ -7,17 +8,12 @@ fetch(bearFile).then(function(response) {
     bearJSON = bearJSON.reverse();
     addBears(bearJSON)
 });
-// fetch(bearFile)
-// .then(function(response) {
-//     addBears(response.json());
-// }).then(function(json) {
-//     console.log(json)
-// })
 
 function addBears(bearJSON) {
     for (var i = 0; i < bearJSON.length; i++) {
         var currentTemplate = createBearElement(bearJSON[i], bearJSON.length - i - 1)
-        cols[i % cols.length].append(currentTemplate)
+        cols[i % cols.length].append(currentTemplate.cloneNode(true))
+        duplicate.append(currentTemplate)
     }
 }
 
