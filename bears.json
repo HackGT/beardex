@@ -107,5 +107,11 @@
         "bearDescription": "Artist Bear",
         "bearEvent": "Horizons",
         "bearEventLink": "https://horizons.hack.gt/"
+    },
+    {
+        "bearImage": "assets/2025_teeny_bear.svg",
+        "bearDescription": "Building Bear",
+        "bearEvent": "HackGTeeny 2025",
+        "bearEventLink": "https://teeny.hack.gt/"
     }
 ]
